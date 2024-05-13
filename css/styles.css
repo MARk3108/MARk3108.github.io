@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+*{
+    font-family: "Comfortaa", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .15s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: #010103;
+}
+
+.header{
+    background: #010103;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: .1rem solid rgba(255, 255, 255, .3);
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 5rem;
+    border-radius: 50px;
+}
+
+.header .navbar a{
+    margin:0 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.header .navbar a:hover{
+    color: orangered;
+    border-bottom: .1rem solid orangered;
+    padding-bottom: .5rem;
+}
+section{
+    padding: 2rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background: orangered;
+    cursor: pointer;
+}
+.btn:hover{
+    padding: 1.4rem 3rem;
+}
+.main{
+    min-height: 100vh;
+    background-position-y: center;
+    align-items: center;
+    background: url(../res/phon.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.home{
+    min-height: 100vh;
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+    background-size:cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    margin-top: -5rem;
+}
+
+.home .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 7%;
+    justify-content: center;
+}
+
+.player-card {
+    background: #333;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px; 
+}
+
+.player-card img {
+    max-width: 75%;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.player-card h4 {
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.player-card p {
+    color: #ccc;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.player-card .btn {
+    margin-top: 1.5rem;
+}
+
+.searcher{
+    padding-top: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 7%;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-info {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar button {
+    padding: 0.7rem 1rem;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    background-color: #010103;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #fff;
+    color: orangered;
+}
+
+
+.footer {
+    background: #010103;
+    color: #fff;
+    padding: 2rem 7%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-content h4 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.footer-content ul li a:hover {
+    color: orangered;
+}
+
+
+
+@media (max-width:1120px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:897px) {
+    html{
+        font-size: 45%;
+    }
+    .header{
+        padding: 1rem 1.5rem;
+    }
+
+}
