@@ -75,7 +75,10 @@ section{
     background: orangered;
     cursor: pointer;
 }
-.btn:hover{
+.content .btn:hover{
+    padding: 1.4rem 3rem;
+}
+.player-card .btn:hover{
     padding: 1.4rem 3rem;
 }
 .main{
@@ -152,6 +155,65 @@ section{
 
 .player-card .btn {
     margin-top: 1.5rem;
+}
+
+.midside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 2rem; 
+}
+.midside img {
+    max-width: 100%;
+}
+.midside h1{
+    color: white;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 0.1fr));
+    gap: 2rem;
+    padding: 2rem 7%;
+    justify-content: center;
+}
+
+.news-card {
+    background: #333;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px; 
+}
+
+.news-card img {
+    max-width: 90%;
+    align-self: center;
+}
+
+.news-card h4 {
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.news-card p {
+    color: #ccc;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.news-card .btn {
+    margin-top: 1.5rem;
+}
+.news-card .btn:hover {
+    color: orangered;
+    background-color: white;
 }
 
 .searcher{
