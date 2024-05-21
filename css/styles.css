@@ -310,21 +310,89 @@ section{
 
 
 
-@media (max-width:1120px){
-    html{
+@media (max-width: 1120px) {
+    html {
         font-size: 55%;
     }
-    .header{
+    .header {
         padding: 1.5rem 2rem;
     }
 }
 
-@media (max-width:897px) {
-    html{
+/* Для экранов меньше 897px */
+@media (max-width: 897px) {
+    html {
         font-size: 45%;
     }
-    .header{
+    .header {
         padding: 1rem 1.5rem;
     }
+    .main .content {
+        max-width: 80%;
+        margin-top: -3rem;
+    }
+    .player-card {
+        max-width: 100%;
+    }
+    .midside {
+        margin-top: 1rem;
+    }
+    .news-card {
+        max-width: 100%;
+    }
+    .searcher {
+        max-width: 95%;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
 
+/* Для экранов меньше 640px */
+@media (max-width: 640px) {
+    .header .navbar a {
+        margin: 0 1rem;
+    }
+    .main .content h3 {
+        font-size: 2.5rem;
+    }
+    .home .content p {
+        font-size: 1.4rem;
+    }
+    .player-card h4 {
+        font-size: 1.6rem;
+    }
+    .player-card p {
+        font-size: 1.4rem;
+    }
+    .midside h1 {
+        font-size: 2rem;
+    }
+    .news-card h4 {
+        font-size: 1.6rem;
+    }
+    .news-card p {
+        font-size: 1.2rem;
+    }
+    .search-bar input {
+        width: 60%;
+    }
+    .search-bar button {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.4rem;
+    }
+    .footer-content h4 {
+        font-size: 1.8rem;
+    }
+    .footer-content p {
+        font-size: 1.4rem;
+    }
+    .footer-content ul li a {
+        font-size: 1.4rem;
+    }
 }
