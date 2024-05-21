@@ -365,6 +365,9 @@ section{
     .midside {
         margin-top: 1rem;
     }
+    .news{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 0.1fr));
+    }
     .news-card {
         max-width: 100%;
     }
