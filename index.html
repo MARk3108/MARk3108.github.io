@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Secret Quest Drop</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              night: "#0f172a",
+              lilac: "#a78bfa",
+              pink: "#ec4899",
+              rose: "#f43f5e",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="text-slate-800">
+    <main class="px-4 py-12 md:px-8 lg:px-16">
+      <section class="max-w-4xl mx-auto text-center mb-12 fade-in">
+        <p class="text-sm uppercase tracking-[0.3em] text-pink/80 mb-4">
+          🎉 Квест для Насти 🎉
+        </p>
+        <h1 class="text-4xl md:text-5xl font-semibold mb-4 text-slate-800">
+          🎂 Я сегодня главный персонаж 🎂
+        </h1>
+        <p class="text-lg text-slate-700 max-w-2xl mx-auto leading-relaxed">
+          Сегодня ты проходишь маршрут без правил, но с маленькими условиями. <br>
+Суть проста: выполнила → закинула фото → открылась новая точка.
+Приступаем! 💖
+        </p>
+      </section>
+
+      <div id="stepsContainer" class="space-y-10 max-w-3xl mx-auto"></div>
+
+      <section
+        id="finalMessage"
+        class="max-w-3xl mx-auto glass rounded-3xl p-8 mt-12 hidden"
+      >
+        <div class="flex items-start gap-4">
+          <div
+            class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-500/30 border border-pink-300/30"
+          >
+            <span class="text-2xl">🎂</span>
+          </div>
+          <div class="text-left">
+            <h2 class="text-2xl font-semibold mb-2 text-slate-800">🎉 Поздравляю, квест пройден! 🎉</h2>
+            <p class="text-slate-700 leading-relaxed">
+              Ты как всегда победила и прошла маршрут без проблем. <br>
+              💕 С Днём Рождения, красотка! 💕
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"
+      defer
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"
+      defer
+    ></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
+

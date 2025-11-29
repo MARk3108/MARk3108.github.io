@@ -1,0 +1,62 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 25%, #f9a8d4 50%, #f472b6 75%, #ec4899 100%);
+  min-height: 100vh;
+}
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.glow {
+  box-shadow: 0 20px 45px rgba(236, 72, 153, 0.4);
+}
+
+.quest-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.dropzone {
+  position: relative;
+}
+
+.progress-track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, 0.25);
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ec4899, #f43f5e);
+  transition: width 0.2s ease;
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.emoji-splash {
+  position: fixed;
+  pointer-events: none;
+  font-size: 2rem;
+  z-index: 9999;
+  opacity: 1;
+  will-change: transform, opacity;
+}
